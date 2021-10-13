@@ -1,0 +1,32 @@
+{% extends 'partials/base.html' %}
+{% block content %}
+<div class="row my-4 text-white">
+    <div class="col-md-4">
+        <div class="card shadow bg-secondary">
+            <div class="card-body">
+                <h5>Stationary</h5>
+                <hr>
+                <h4 class="text-center">{{ stationary_total }}</h4>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card shadow bg-primary">
+            <div class="card-body">
+                <h5>Electronics</h5>
+                <hr>
+                <h4 class="text-center">{{ electronics_total }}</h4>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card shadow bg-success">
+            <div class="card-body">
+                <h5>Food</h5>
+                <hr>
+                <h4 class="text-center">{{ food_total }}</h4>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
